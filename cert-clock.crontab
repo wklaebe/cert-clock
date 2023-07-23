@@ -1,0 +1,2 @@
+@reboot screen -dmS info-beamer $HOME/info-beamer-pi/cert-clock/cert-clock-start.sh
+*/5 * * * * $HOME/info-beamer-pi/cert-clock/cert-clock-set.py
