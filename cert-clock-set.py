@@ -30,6 +30,6 @@ dow_en = now.strftime('%A')
 
 sock.sendto('cert-clock/dow/set:{:s}/{:s}'.format(dow_de,dow_en).encode('ascii'), ('127.0.0.1', 4444))
 
-doe = now.date() - datetime.date(2023,8,15)
+doe = now.date() - datetime.date(2023,8,14) # Day 0
 
 sock.sendto('cert-clock/doe/set:Tag/Day {:d}'.format(doe.days).encode('ascii'), ('127.0.0.1', 4444))
